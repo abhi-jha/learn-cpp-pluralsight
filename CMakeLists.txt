@@ -7,6 +7,6 @@ find_package(Threads REQUIRED)
 include_directories("${PROJECT_SOURCE_DIR}/")
 
 set(Sources main.cpp sqlite3.c)
-set(Headers sqlite3.h)
+set(Headers sqlite3.h Handle.h)
 add_executable(learn_cpp_pluralsight ${Sources} ${Headers})
 target_link_libraries(learn_cpp_pluralsight Threads::Threads -ldl)
